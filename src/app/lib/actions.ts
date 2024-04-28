@@ -45,7 +45,7 @@ export async function queryTodos() {
   return { data, errors };
 }
 
-export async function updateTodo(todoId: string, name) {
+export async function updateTodo(todoId: string, name: string) {
   console.log("inside delete todo");
   const { data, errors } = await cookiesClient.graphql({
     query: mutations.updateTodo,
