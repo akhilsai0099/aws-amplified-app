@@ -16,19 +16,19 @@ const Item: React.FC<{ todo: Todo }> = ({ todo }) => {
     await deleteTodo(id);
   };
 
-  const updatetodo = async (e: React.FocusEvent<HTMLInputElement>) => {
-    const id = todo.id;
-    console.log(e.target.innerText);
-    await updateTodo(id, e.target.innerText);
-  };
+  // const updatetodo = async (e: React.FocusEvent<HTMLInputElement>) => {
+  //   const id = todo.id;
+  //   console.log(e.target.innerText);
+  //   await updateTodo(id, e.target.innerText);
+  // };
 
   return (
     <div className="flex border-b-2 px-4 py-2 w-[100%] justify-between items-center">
       <div
         key={todo.id}
-        contentEditable="true"
+        // contentEditable="true"
         className="w-[100%] focus: outline-none p-4 cursor-pointer"
-        onBlur={updatetodo}
+        // onBlur={updatetodo}
       >
         {todo.name}
       </div>

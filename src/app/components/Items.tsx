@@ -14,7 +14,7 @@ const Items = async () => {
 
       {/* 4. Display todos*/}
       {todos.map((todo) => {
-        return <Item todo={todo} />;
+        return <Item key={todo.id} todo={todo} />;
       })}
     </div>
   );
